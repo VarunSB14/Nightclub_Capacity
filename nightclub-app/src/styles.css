@@ -1,0 +1,171 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background-color: #f7f4e9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.club-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card.green {
+  background-color: #8fbc8f;
+  color: black;
+}
+
+.card.yellow {
+  background-color: #f9e79f;
+  color: black;
+}
+
+.card.red {
+  background-color: #f1948a;
+  color: black;
+}
+
+.status-message {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 12px 24px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.color-success {
+  background-color: #28a745;
+  color: white;
+}
+
+button.color-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+
+.increment {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  line-height: 1.2;
+}
+
+.decrement {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  line-height: 1.2;
+}
+
+button.color-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.modal-header {
+  background-color: #f7f4e9;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.modal-footer {
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 576px) {
+  .club-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 14px 28px;
+  }
+}
